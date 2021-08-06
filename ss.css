@@ -1,0 +1,20 @@
+a{
+    display: block;
+    height: 80px;
+    width: 250px;
+    background-color: linear-gradient(#9365ff,#6f3bff);
+    position:absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+bottom: 0;
+place-content: center;
+font-family: "popins",sans-serif;
+color: #fff;
+font-size: 20px;
+font-weight: 500;
+text-decoration: none;
+letter-spacing: 3px;
+border-radius: 5px;
+}

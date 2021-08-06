@@ -1,0 +1,68 @@
+@import url('guko2.png');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body{
+    background-color: #000;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+section h2{
+    position: relative;
+    width: 500px;
+    height: 168px;
+    text-align:center;
+    line-height: 9vh;
+    font-size: 8vw;
+    color: #000;
+    font-weight: 700;
+    top: 32%;
+    left:25%;
+}
+.banner{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner .books{
+    position: relative;
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    background-color: #fff;
+    animation:animte 2s ease-in-out forwards  ;
+    animation-Delay:1s ;
+}
+@keyframes animte {
+    0%{
+        transform: translatez(2000px);
+        background-color:#000;
+        background-position: center;
+        background-attachment:fixed;
+        background-size: cover;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        transform: translatey(0px);
+        background:url("guko.jpg-removebg.png");
+        background-position: center;
+        background-attachment:fixed;
+        background-size: cover;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+    }
+}
